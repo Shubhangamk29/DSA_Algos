@@ -1,0 +1,63 @@
+Approach 1 --> optimal 1
+
+class Solution{
+public:
+void merge(long long arr1[] , long long arr2[] , int n , int m){
+  int left = n-1;
+  int right = 0;
+  while(left>=0 && right<m){
+      if(arr1[left] > arr2[right]){
+        swap(arr1[left] , arr2[right]);
+        left--,right++;
+      }
+      else {
+        break;
+      }
+  }
+  sort(arr1 , arr1+n);
+  sort(arr2 , arr2+m);
+
+  }
+}
+// time cpmplexicity will be : O(min(n,m)) + O(mlogn) + (nlogm)
+// space complexicity will be : O(1)
+
+
+
+Approach 2 --> optimal 2
+
+Gap technique
+Shell sort
+
+
+
+class Solution{
+  private 
+  public:
+  
+  void merge(long long arr1[] , long long arr2[] , int n , int m){
+    int len = (n+m);
+    int gap = (len/2) + (len % 2);
+    while(gap>0)
+    {
+      int left = 0;
+      int right = left+gap;
+      while(right < len)
+      {
+        if(left < n && right >= n)
+        {
+          
+        }
+        else if(left >= n)
+        {}
+        else
+        {
+          
+        }
+      }
+    }
+  }
+}
+
+
+
